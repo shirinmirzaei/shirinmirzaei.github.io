@@ -4,48 +4,110 @@
     <title>Shirin Mirzaei</title>
     <style>
         body {
-            font-family: Arial;
-            margin: 40px;
-            max-width: 900px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: white;
+            color: #222;
         }
-        .container {
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: normal;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #999;
+            padding-bottom: 15px;
+        }
+
+        .menu {
+            margin-bottom: 40px;
+            font-size: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #2a7f9e;
+            margin-right: 30px;
+        }
+
+        .content {
             display: flex;
+            align-items: flex-start;
+            gap: 50px;
         }
+
         .text {
             flex: 2;
+            font-size: 18px;
+            line-height: 1.8;
         }
+
         .photo {
             flex: 1;
-            margin-left: 20px;
         }
-        img {
+
+        .photo img {
             width: 100%;
-            border-radius: 10px;
+            max-width: 320px;
+            border-radius: 6px;
+        }
+
+        .links a {
+            color: #2a7f9e;
+            text-decoration: none;
+            margin-right: 12px;
         }
     </style>
 </head>
-
 <body>
+    <div class="page">
+        <h1>Shirin Mirzaei</h1>
 
-<h1>Shirin Mirzaei</h1>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Research</a>
+            <a href="#">Teaching</a>
+            <a href="#">Talks & Service</a>
+        </div>
 
-<div class="container">
+        <div class="content">
+            <div class="text">
+                <h2>Home</h2>
 
-<div class="text">
-<p>Hello!</p>
+                <p>Hello!</p>
 
-<p>
-I am a PhD student in Mathematics at the University of Lethbridge.
-My research focuses on automorphisms of Cayley graphs.
-</p>
+                <p>
+                    My name is Shirin Mirzaei, and I am a PhD student in Mathematics
+                    at the University of Lethbridge.
+                </p>
 
-</div>
+                <p>
+                    My research lies in algebraic graph theory, with a particular focus
+                    on automorphisms of Cayley graphs, including colour-preserving and
+                    colour-permuting automorphisms.
+                </p>
 
-<div class="photo">
-<img src="Subject 2.png">
-</div>
+                <p>
+                    I am also interested in teaching mathematics and supporting students
+                    through tutorials and problem solving.
+                </p>
 
-</div>
+                <p class="links">
+                    <a href="#">CV</a>
+                    <a href="#">Google Scholar</a>
+                    <a href="#">GitHub</a>
+                </p>
+            </div>
 
+            <div class="photo">
+                <img src="Subject 2.png" alt="Shirin Mirzaei">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
